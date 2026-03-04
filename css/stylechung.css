@@ -1,52 +1,247 @@
+/* ================= RESET ================= */
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    overflow-x:hidden;
 }
 
 body{
-    background-color: #f5f5f5;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(180deg,#dae7ff,#cfe0ff);
 }
 
-/* HEADER */
+
+/* ================= HEADER ================= */
+
 header{
-    background: #ffb6c1;
-    padding: 20px;
-    text-align: center;
-    color: white;
+    background:linear-gradient(180deg,#ffffff,#97bcff);
+    padding:25px 20px;
+    text-align:center;
+    border-bottom:1px solid #dde6ff;
 }
+
+h1{
+    font-family:'Cinzel', serif;
+    font-size:42px;
+    letter-spacing:3px;
+    font-weight:700;
+    color: #fff67c
+
+
+}
+
+header p{
+    margin-top:8px;
+    font-size:14px;
+    color:white
+
+}
+
+
+/* ================= NAV ================= */
 
 nav{
-    background: white;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background:rgb(247, 247, 247);
+    padding:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.04);
 }
 
 nav a{
-    margin: 0 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    margin:0 25px;
+    text-decoration:none;
+    font-weight:600;
+    color:#6f86e8;
+    transition:0.3s;
 }
 
 nav a:hover{
-    color: #ff69b4;
+    color:#4967de;
 }
 
-/* CONTAINER */
-.container{
-    width: 1200px;
-    margin: auto;
-    padding: 20px 0;
+
+/* ================= BANNER SLIDER ================= */
+
+.banner{
+    width:94%;
+    max-width:1500px;
+    height:480px;
+    margin:60px auto;
+    overflow:hidden;
+    border-radius:28px;
+    position:relative;
+    box-shadow:0 25px 60px rgba(0,0,0,0.12);
 }
 
-/* FOOTER */
+.banner input{
+    display:none;
+}
+
+.slides{
+    display:flex;
+    width:200%;
+    height:100%;
+    transition:transform 0.6s ease;
+}
+
+.slides img{
+    width:50%;
+    height:100%;
+    object-fit:cover;
+}
+
+#s1:checked ~ .slides{
+    transform:translateX(0%);
+}
+
+#s2:checked ~ .slides{
+    transform:translateX(-50%);
+}
+
+
+/* ===== NÚT TRƯỢT ===== */
+
+.prev, .next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+    opacity:0;
+    pointer-events:none;
+    transition:0.3s;
+}
+
+.banner:hover .prev,
+.banner:hover .next{
+    opacity:1;
+    pointer-events:auto;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
+
+.prev:hover,
+.next:hover{
+    background:#ffd76a;
+}
+
+
+/* ================= SONG SONG ================= */
+
+.section-wrapper{
+    display:flex;
+    justify-content:space-between;
+    padding:60px;
+}
+
+.box{
+    width:48%;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.05);
+}
+
+h2{
+    margin-bottom:20px;
+    border-left:6px solid #ffd76a;
+    padding-left:10px;
+    color:#536ccd;
+}
+
+
+/* ================= SẢN PHẨM ================= */
+
+.sanpham{
+    text-align:center;
+    padding:20px;
+    transition:0.5s;
+}
+
+.sanpham img{
+    width:140px;   /* ảnh nhỏ lại xinh hơn */
+    border-radius:15px;
+    transition:0.5s;
+}
+
+.price{
+    color:#f2b705;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.sanpham:hover{
+    transform:translateY(-10px);
+}
+
+.sanpham:hover img{
+    transform:scale(1.08);
+    box-shadow:0 15px 30px rgb(255, 225, 147);
+}
+
+
+/* ================= THIẾU NHI ================= */
+
+.thieunhi-section{
+    display:flex;
+    padding:60px;
+    gap:30px;
+}
+
+.thieunhi-banner{
+    width:25%;
+    position:sticky;
+    top:20px;
+}
+
+.thieunhi-banner img{
+    width:100%;
+    border-radius:20px;
+}
+
+.thieunhi-list{
+    width:75%;
+}
+
+.thieunhi-items{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+}
+
+.thieunhi-items .sanpham{
+    min-width:170px;
+}
+
+
+/* ================= FOOTER ================= */
+
 footer{
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    background:linear-gradient(180deg,#ffffff,#97bcff);
+    text-align:center;
+    padding:25px;
+    border-top:1px solid #dde6ff;
+    font-size:14px;
+    margin-top:auto;
 }

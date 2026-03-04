@@ -2,52 +2,95 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Bookstore - Trang chủ</title>
+    <title>BLUE THE MOON</title>
     <link rel="stylesheet" href="css/stylechung.css">
-    <link rel="stylesheet" href="css/sanpham.css">
+
+    <!-- Font đẹp hơn -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-    <h1>BLUE THE MOON </h1>
-    <h3>Chúc bạn có một trải nghiệm tuyệt vời nhé</h3>
+    <h1>BLUE THE MOON</h1>
+    <p>Cùng chúng mình khám phá thế giới qua những cuốn sách ✨</p>
 </header>
 
 <nav>
-    <a href="Trangchu.html">Trang chủ</a>
-    <a href="Theloai.html">Thể loại</a>
-    <a href="Giohang.html">Giỏ hàng</a>
+    <a href="#">Trang chủ</a>
+    <a href="#">Thể loại</a>
+    <a href="#">Giỏ hàng</a>
 </nav>
 
-<div class="container">
+<section class="banner">
 
-    <h2>Sá</h2>
-    <div class="product-list">
+    <!-- radio ẩn -->
+    <input type="radio" name="slide" id="s1" checked>
+    <input type="radio" name="slide" id="s2">
 
-        <div class="product">
-            <img src="images/sanpham/sach1.jpg">
-            <h3>Đắc Nhân Tâm</h3>
+    <div class="slides">
+        <img src="images/banner/bncotich1.png">
+        <img src="images/banner/kynang.png">
+    </div>
+
+    <!-- nút trái phải -->
+    <label for="s2" class="next">&#10095;</label>
+    <label for="s1" class="prev">&#10094;</label>
+
+</section>
+<!-- SONG SONG -->
+<div class="section-wrapper">
+
+    <div class="box">
+        <h2>Sách bán chạy</h2>
+        <div class="sanpham">
+            <img src="images/sanpham/banchay/sach1.jpg">
+            <h3>Cơ thể tự chữa lành</h3>
             <p class="price">120.000đ</p>
-            <a href="chitietsach.html">
-                <button>Xem chi tiết</button>
-            </a>
         </div>
+    </div>
 
-        <div class="product">
-            <img src="images/sanpham/sach2.jpg">
-            <h3>Nhà Giả Kim</h3>
-            <p class="price">95.000đ</p>
-            <a href="chitietsach.html">
-                <button>Xem chi tiết</button>
-            </a>
+    <div class="box">
+        <h2>Sách mới</h2>
+        <div class="sanpham">
+            <img src="images/sanpham/banchay/sach1.jpg">
+            <h3>Hành trình ánh sáng</h3>
+            <p class="price">150.000đ</p>
         </div>
+    </div>
 
+</div>
+
+<!-- THIẾU NHI -->
+<div class="thieunhi-section">
+
+    <div class="thieunhi-banner">
+        <img src="images/banner/bncotich1.png">
+    </div>
+
+    <div class="thieunhi-list">
+        <h2>Truyện thiếu nhi</h2>
+
+        <div class="thieunhi-items">
+
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Dế Mèn</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Cinderella</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Hoàng tử bé</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Rapunzel</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Pinocchio</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Peter Pan</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Aladdin</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Bạch Tuyết</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Nàng tiên cá</p></div>
+            <div class="sanpham"><img src="images/sanpham/banchay/sach1.jpg"><p>Cổ tích Việt</p></div>
+
+        </div>
     </div>
 
 </div>
 
 <footer>
-    © 2026 Bookstore - Thiết kế bởi Mai
+    © 2026 BLUE THE MOON
 </footer>
 
 </body>
