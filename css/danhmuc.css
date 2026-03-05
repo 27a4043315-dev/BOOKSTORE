@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #F5F8FB;  
+}
+
+/* HEADER */
+header{
+    background:#afd5f1;
+    color:white;
+    padding:20px 40px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* LAYOUT */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.sidebar h3{
+    background-color: #A7C7E7;   
+    color: #1F3C88;
+    padding: 15px;
+    margin: 0;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar ul li a{
+    color: #2E2E2E;
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+    background-color: #F0F6FF;
+    color: #C97C47;   
+}
+
+/* MAIN */
+.main{
+    flex:1;
+    padding:40px;
+}
+
+.main h2{
+    margin-bottom:30px;
+}
+
+/* PRODUCT GRID */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h4{
+    margin:15px 0 10px;
+    text-align: center;
+}
+
+.price{
+    color:#e74c3c;
+    font-weight:bold;
+    text-align: center;
+}
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:12px;
+    padding:8px 14px;
+    background:#c97c47;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#a86538;
+}
+/* CSS riêng cho trang danh mục sản phẩm*/
+/*Thêm class "page-danhmuc" vào thẻ body để áp dụng CSS riêng cho trang danh mục*/
+.page-danhmuc .container{
+    margin: 0;
+    width: 100%;
+}
+
+.page-danhmuc .sidebar{
+    margin-left: 0;
+}
