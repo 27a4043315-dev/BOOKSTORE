@@ -38,7 +38,6 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 padding:20px;
 height:fit-content;
 }
-
 .sidebar h2{
 margin-bottom:15px;
 color:#3c5a99;
@@ -60,12 +59,11 @@ display:block;
 border-radius:6px;
 transition:0.3s;
 }
-
 .sidebar a:hover{
 background:#e5ecff;
 color:#2c4ea3;
+padding-left:15px;
 }
-
 /* PRODUCTS */
 
 .products{
@@ -89,11 +87,15 @@ gap:20px;
 
 .card{
 background:white;
-padding:15px;
+padding:20px;
 border-radius:12px;
 text-align:center;
 box-shadow:0 4px 15px rgba(0,0,0,0.1);
 transition:0.3s;
+min-height:320px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
 .card:hover{
@@ -114,13 +116,13 @@ margin:10px 0;
 }
 
 .price{
-color:#e74c3c;
+color:#f2b705;
 font-weight:bold;
 margin-bottom:10px;
 }
 
 .card button{
-background:#c27b48;
+background:#dd9e72;
 color:white;
 border:none;
 padding:10px 15px;
@@ -130,5 +132,31 @@ transition:0.3s;
 }
 
 .card button:hover{
-background:#9c5f34;
+background:#c78555;
+}
+.page-danhmuc .product-grid{
+grid-template-columns:repeat(4,1fr);
+}
+/*phân trang*/
+.pagination{
+    text-align: right;
+    margin: 30px 0;
+}
+
+.pagination a{
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #464645;
+}
+
+.pagination a.active{
+    background-color: #d9ba7b;
+    color: white;
+}
+
+.pagination a:hover{
+    background-color: #eec090;
 }
