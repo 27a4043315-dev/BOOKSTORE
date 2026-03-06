@@ -5,6 +5,7 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+<<<<<<< HEAD
 body{
     background:linear-gradient(180deg,#dae7ff,#cfe0ff);
 }
@@ -19,6 +20,8 @@ header{
     font-size:24px;
     letter-spacing:2px;
 }
+=======
+>>>>>>> 65a307842a829e246a9bc76a8d33c82f87b495e2
 
 /* LAYOUT */
 
