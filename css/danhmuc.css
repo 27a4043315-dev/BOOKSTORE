@@ -144,7 +144,7 @@ header{
 }
 
 .card button:hover{
-background:#c78555;
+    background:#c78555;
 }
 .page-danhmuc .product-grid{
 grid-template-columns:repeat(4,1fr);
@@ -165,7 +165,7 @@ grid-template-columns:repeat(4,1fr);
 }
 
 .pagination a.active{
-    background-color: #d9ba7b;
+    background-color: #dd9e72;
     color: white;
 }
 
