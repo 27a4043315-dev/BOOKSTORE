@@ -12,33 +12,41 @@ html, body{
 
 body{
     font-family:'Poppins', sans-serif;
-    background:linear-gradient(180deg,#dae7ff,#cfe0ff);
+    background:linear-gradient(180deg,#fff9f9,#d6f5fd);
 }
 
 
 /* ================= HEADER ================= */
 
 header{
-    background:linear-gradient(180deg,#ffffff,#97bcff);
+    background:linear-gradient(180deg,#a4ebff,#fff3f3);
     padding:25px 20px;
     text-align:center;
-    border-bottom:1px solid #dde6ff;
+    position:relative;
 }
 
+.logo{
+    width:160px;
+    height:auto;
+    position:absolute;
+    left:40px;           /* dịch sang phải thêm */
+    top:50%;             /* đưa logo xuống giữa */
+    transform:translateY(-50%); /* căn giữa theo chiều dọc */
+}
 h1{
     font-family:'Cinzel', serif;
-    font-size:42px;
+    font-size:48x;
     letter-spacing:3px;
     font-weight:700;
-    color: #fff67c
+    color: rgb(255, 248, 148);
 
 
 }
 
 header p{
     margin-top:8px;
-    font-size:14px;
-    color:white
+    font-size:16px;
+    color:rgb(255, 255, 255)
 
 }
 
@@ -46,7 +54,7 @@ header p{
 /* ================= NAV ================= */
 
 nav{
-    background:rgb(247, 247, 247);
+    background:linear-gradient(10deg,#ffffff,#edf9f5);
     padding:15px;
     text-align:center;
     box-shadow:0 8px 20px rgba(0,0,0,0.04);
@@ -56,12 +64,12 @@ nav a{
     margin:0 25px;
     text-decoration:none;
     font-weight:600;
-    color:#6f86e8;
+    color:#899fff;
     transition:0.3s;
 }
 
 nav a:hover{
-    color:#4967de;
+    color:#fcf9a8;
 }
 
 
@@ -209,16 +217,20 @@ h2{
 }
 
 .thieunhi-banner{
-    width:25%;
-    position:sticky;
-    top:20px;
+    width: 25%;
+    max-width: 300px;
+    height: 320px;
+    position: sticky;
+    top: 20px;
+    overflow: hidden;   /* Quan trọng */
+    border-radius: 20px;  /* bo tròn góc banner */
 }
 
 .thieunhi-banner img{
-    width:100%;
-    border-radius:20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 .thieunhi-list{
     width:75%;
 }
@@ -238,10 +250,9 @@ h2{
 /* ================= FOOTER ================= */
 
 footer{
-    background:linear-gradient(180deg,#ffffff,#97bcff);
+    background:linear-gradient(30deg,#d9f8ff,#ffffff);
     text-align:center;
-    padding:25px;
-    border-top:1px solid #dde6ff;
+    padding:100px;
     font-size:14px;
     margin-top:auto;
 }
