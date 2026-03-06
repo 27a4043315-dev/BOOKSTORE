@@ -1,68 +1,68 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:linear-gradient(to right,#e8eef7,#cfd9ec);
+    background:linear-gradient(180deg,#dae7ff,#cfe0ff);
 }
 
 /* HEADER */
 
 header{
-background:#6c8fc7;
-color:white;
-text-align:center;
-padding:20px;
-font-size:24px;
-letter-spacing:2px;
+    background:linear-gradient(180deg,#ffffff,#97bcff);
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:24px;
+    letter-spacing:2px;
 }
 
 /* LAYOUT */
 
 .container{
-display:flex;
-padding:20px;
-gap:20px;
+    display:flex;
+    padding:20px;
+    gap:20px;
 }
 
 /* SIDEBAR */
 
 .sidebar{
-width:250px;
-background:white;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-padding:20px;
-height:fit-content;
+    width:250px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    padding:20px;
+    height:fit-content;
 }
 .sidebar h2{
-margin-bottom:15px;
-color:#3c5a99;
+    margin-bottom:15px;
+    color:#3c5a99;
 }
 
 .sidebar ul{
-list-style:none;
+    list-style:none;
 }
 
 .sidebar li{
-margin-bottom:10px;
+    margin-bottom:10px;
 }
 
 .sidebar a{
-text-decoration:none;
-color:#333;
-padding:8px;
-display:block;
-border-radius:6px;
-transition:0.3s;
+    text-decoration:none;
+    color:#333;
+    padding:8px;
+    display:block;
+    border-radius:6px;
+    transition:0.3s;
 }
 .sidebar a:hover{
-background:#e5ecff;
-color:#2c4ea3;
-padding-left:15px;
+    background:#e5ecff;
+    color:#2c4ea3;
+    padding-left:15px;
 }
 /* PRODUCTS */
 
@@ -71,8 +71,8 @@ padding-left:15px;
 }
 
 .products h2{
-margin-bottom:20px;
-color:#3c5a99;
+    margin-bottom:20px;
+    color:#3c5a99;
 }
 
 /* GRID */
