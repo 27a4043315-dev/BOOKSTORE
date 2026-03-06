@@ -25,7 +25,19 @@ body{
     color:#2f3c5a;
 >>>>>>> 65a307842a829e246a9bc76a8d33c82f87b495e2
 }
+.title{
+    text-align:center;
+    flex:1;
+}
 
+<<<<<<< HEAD
+=======
+header p{
+    margin-top:8px;
+    font-size:16px;
+    color:white;
+}
+>>>>>>> 83b65fe (mình chỉnh lại css rồi nhé)
 /* ================= HEADER ================= */
 
 header{
@@ -35,14 +47,19 @@ header{
     position:relative;
     border-radius:0 0 25px 25px;
 }
+.header-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    max-width:1200px;
+    margin:auto;
+    gap:20px;
+}
 
 .logo{
-    width:160px;
-    height:auto;
-    position:absolute;
-    left:40px;           /* dịch sang phải thêm */
-    top:50%;             /* đưa logo xuống giữa */
-    transform:translateY(-50%); /* căn giữa theo chiều dọc */
+    left:800px;
+    width:220px;       /* chỉnh to nhỏ ở đây */
+    height:auto; 
 }
 h1{
     font-family:'Fredoka', sans-serif;
@@ -50,8 +67,7 @@ h1{
     letter-spacing:3px;
     font-weight:600;
     color:#5aaed6;
-    text-shadow:0 6px 18px rgba(120,180,220,0.4);
-
+    text-shadow:0 6px 18px rgba(120,180,220,0.4)
 }
 
 header p{
@@ -60,29 +76,95 @@ header p{
     color:rgb(255, 255, 255)
 
 }
-
-
-/* ================= NAV ================= */
-
-nav{
-    background:#ffffff;
-    padding:15px;
-    text-align:center;
+.menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    margin:auto;
+    padding:18px 40px;
+    background:white;
     box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    border-radius:14px;
 }
 
-nav a{
-    margin:0 25px;
+/* menu trái */
+.menu-links{
+    display:flex;
+    gap:40px;
+}
+
+.menu-links a{
     text-decoration:none;
     font-weight:600;
     color:#6faed6;
+    font-size:20px;   /* chữ to hơn */
     transition:0.3s;
 }
 
-nav a:hover{
+.menu-links a:hover{
     color:#9edcff;
 }
 
+/* thanh tìm kiếm */
+.search-box{
+    display:flex;
+    align-items:center;
+    background:white;
+    border-radius:35px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+.search-box input{
+    border:none;
+    padding:14px 20px;
+    width:320px;   /* thanh tìm kiếm dài hơn */
+    outline:none;
+    font-size:16px;
+}
+
+.search-box button{
+    border:none;
+    background:#8fd3ff;
+    color:white;
+    padding:14px 20px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.search-box button:hover{
+    background:#5aaed6;
+}
+
+/* ===== NAV LAYOUT ===== */
+
+.nav-bar{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+background:white;
+padding:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+
+.menu{
+display:flex;
+gap:40px;
+}
+
+.menu a{
+text-decoration:none;
+font-weight:600;
+color:#6faed6;
+font-size:18px;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#9edcff;
+}
 /* ================= BANNER SLIDER ================= */
 
 .banner{
@@ -311,6 +393,6 @@ h2{
 footer{
     background:linear-gradient(30deg,#eaf9ff,#ffffff);
     text-align:center;
-    padding:80px;
+    padding:30px;
     font-size:14px;
-}
+} 
