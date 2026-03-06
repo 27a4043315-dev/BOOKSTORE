@@ -5,20 +5,6 @@ box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
 
-body{
-background:linear-gradient(to right,#e8eef7,#cfd9ec);
-}
-
-/* HEADER */
-
-header{
-background:#6c8fc7;
-color:white;
-text-align:center;
-padding:20px;
-font-size:24px;
-letter-spacing:2px;
-}
 
 /* LAYOUT */
 
