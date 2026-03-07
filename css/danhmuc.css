@@ -5,23 +5,6 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-<<<<<<< HEAD
-body{
-    background:linear-gradient(180deg,#dae7ff,#cfe0ff);
-}
-
-/* HEADER */
-
-header{
-    background:linear-gradient(180deg,#ffffff,#97bcff);
-    color:white;
-    text-align:center;
-    padding:20px;
-    font-size:24px;
-    letter-spacing:2px;
-}
-=======
->>>>>>> 65a307842a829e246a9bc76a8d33c82f87b495e2
 
 /* LAYOUT */
 
@@ -168,10 +151,10 @@ grid-template-columns:repeat(4,1fr);
 }
 
 .pagination a.active{
-    background-color: #dd9e72;
+    background-color: #f9b55d;
     color: white;
 }
 
 .pagination a:hover{
-    background-color: #eec090;
+    background-color: #f7c38b;
 }

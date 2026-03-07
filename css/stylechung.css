@@ -12,32 +12,19 @@ html, body{
 
 body{
     font-family:'Poppins', sans-serif;
-<<<<<<< HEAD
-    background:linear-gradient(180deg,#dae7ff,#cfe0ff);
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-}
-.container{
-    flex: 1;
-=======
     background:linear-gradient(180deg,#f4fbff,#dff3ff);
     color:#2f3c5a;
->>>>>>> 65a307842a829e246a9bc76a8d33c82f87b495e2
 }
 .title{
     text-align:center;
     flex:1;
 }
 
-<<<<<<< HEAD
-=======
 header p{
     margin-top:8px;
     font-size:16px;
     color:white;
 }
->>>>>>> 83b65fe (mình chỉnh lại css rồi nhé)
 /* ================= HEADER ================= */
 
 header{
