@@ -12,7 +12,7 @@ html, body{
 
 body{
     font-family:'Poppins', sans-serif;
-    background:linear-gradient(180deg,#f4fbff,#dff3ff);
+    background:linear-gradient(180deg,#f7fbfd,#eaf6fb);
     color:#2f3c5a;
 }
 .title{
@@ -23,16 +23,15 @@ body{
 header p{
     margin-top:8px;
     font-size:16px;
-    color:white;
+    color:rgb(241, 230, 141);
 }
 /* ================= HEADER ================= */
 
 header{
-    background:linear-gradient(180deg,#bfe9ff,#e9f7ff);
-    padding:30px 20px;
+    background:linear-gradient(180deg,#b8e3f5,#dff3fb);
+    padding:4px 20px;
     text-align:center;
     position:relative;
-    border-radius:0 0 25px 25px;
 }
 .header-top{
     display:flex;
@@ -45,7 +44,7 @@ header{
 
 .logo{
     left:800px;
-    width:220px;       /* chỉnh to nhỏ ở đây */
+    width:280px;       /* chỉnh to nhỏ ở đây */
     height:auto; 
 }
 h1{
@@ -53,15 +52,8 @@ h1{
     font-size:52px;
     letter-spacing:3px;
     font-weight:600;
-    color:#5aaed6;
+    color:#fffff7;
     text-shadow:0 6px 18px rgba(120,180,220,0.4)
-}
-
-header p{
-    margin-top:8px;
-    font-size:16px;
-    color:rgb(255, 255, 255)
-
 }
 .menu{
     display:flex;
@@ -293,6 +285,8 @@ h2{
     background:white;
     border-radius:18px;
     box-shadow:0 8px 20px rgba(0,0,0,0.06);
+
+
 }
 
 .sanpham img{
@@ -309,9 +303,143 @@ h2{
 .sanpham:hover img{
     transform:scale(1.1);
 }
+/*=================== TUYỂN TẬP ================= */
+.tuyentap{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:#ffffff;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card p{
+    text-align:center;        /* căn giữa chữ */
+    font-size:16px;           /* kích thước chữ */
+    font-weight:600;          /* độ đậm chữ */
+    color:#232020;            /* màu chữ */
+    padding:12px 10px;        /* khoảng cách trong */
+    margin:0;
+    font-family:Arial, sans-serif;  /* font chữ */
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+/* ================= TIN TỨC ================= */
+.tinxuatban{
+width:90%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+.tinxuatban a{
+text-decoration:none;
+color:inherit;
+display:block;
+height:100%;
+}
+
+.tincard{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+display:flex;
+flex-direction:column;
+height:100%;
+}
+.tincard img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.tincard h3{
+font-size:18px;
+padding:10px;
+height:60px;
+overflow:hidden;
+}
+
+.tincard p{
+font-size:14px;
+padding:0 10px;
+color:#666;
+height:60px;
+overflow:hidden;
+}
+.ngay{
+display:block;
+padding:10px;
+color:#999;
+font-size:13px;
+margin-top:auto;
+}
 /* ================= GIỚI THIỆU ================= */
 
 .tieude{
+    width:100%;
+    text-align:center;
+    font-size:44px;
+    padding:35px 0;
+    margin:80px 0;
+
+    background:linear-gradient(90deg,#cdeeff,#e8f8ff);
+    color:#5aaed6;
+    border-radius:15px;
+}
+
+/* khối nội dung */
+.gioithieu{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* từng hàng */
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    margin-bottom:120px;
+}
+
+/* đảo chiều */
+.reverse{
+    flex-direction:row-reverse;
+}
+
+/* chữ */
+.text{
+    width:55%;
+}
+
+.text h2{
+    font-size:30px;
+    color:#3f63b0;
+    margin-bottom:18px;
+    border-left:6px solid #8fd3ff;
+    padding-left:12px;
+}
+
+tieude{
     width:100%;
     text-align:center;
     font-size:44px;
@@ -376,6 +504,20 @@ h2{
     border-radius:20px;
     box-shadow:0 15px 35px rgba(0,0,0,0.1);
 }
+
+/* ảnh */
+.image{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.image img{
+    width:85%;
+    max-width:420px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
 /* ================= FOOTER ================= */
 footer{
     background:linear-gradient(30deg,#eaf9ff,#ffffff);
@@ -383,3 +525,48 @@ footer{
     padding:30px;
     font-size:14px;
 } 
+.newsletter{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
+    background:#8f989c;
+    padding:20px;
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.newsletter .icon{
+    font-size:22px;
+    color:white;
+}
+
+.newsletter .text{
+    color:white;
+    font-weight:600;
+    font-size:18px;
+}
+
+.newsletter input{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.newsletter button{
+    background:#f58b1f;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    font-weight:600;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.newsletter button:hover{
+    background:#e57d10;
+}
