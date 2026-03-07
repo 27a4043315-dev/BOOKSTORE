@@ -3,6 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blue The Moon</title>
 
 <link rel="stylesheet" href="css/stylechung.css">
@@ -16,10 +17,8 @@ scroll-behavior:smooth;
 
 </head>
 
-<body>
-
+<body class="page-danhmuc">
 <header>
-
 <img src="images/banner/logo.png" class="logo">
 
 <h1>BLUE THE MOON</h1>
@@ -29,19 +28,20 @@ scroll-behavior:smooth;
 </header>
 
 
-<nav>
+<nav class="menu">
+    <div class="menu-links">
+        <a href="Trangchu.html">Trang chủ</a>
+        <a href="Theloai.html">Thể loại</a>
+        <a href="Giohang.html">Giỏ hàng</a>
+    </div>
 
-<a href="Trangchu.html">Trang chủ</a>
-
-<a href="Theloai.html">Thể loại</a>
-
-<a href="Giohang.html">Giỏ hàng</a>
-
+    <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm sách...">
+        <button>🔍</button>
+    </div>
 </nav>
 
-
 <div class="container">
-
 
 <!-- SIDEBAR -->
 
@@ -52,7 +52,7 @@ scroll-behavior:smooth;
 <ul>
 
 <ul>
-    <li><a href="Theloai.html">Tất cả sản phẩm </a></li>
+    <li><a href="Theloai.html">Tất Cả Sản Phẩm </a></li>
     <li><a href="kynang.html">Sách Kỹ Năng</a></li>
     <li><a href="vanhoc.html">Sách Văn Học</a></li>
     <li><a href="kinhte.html">Sách Kinh Tế</a></li>
@@ -73,76 +73,91 @@ scroll-behavior:smooth;
 
 <section id="tatca">
 
-<h2>Tất cả sách</h2>
+<h2>Tất Cả Sản Phẩm</h2>
 
 <div class="product-grid">
 
-<div class="card">
-<img src="images/dacnhantam.jpg">
-<h3>Đắc Nhân Tâm</h3>
-<p class="price">89.000đ</p>
-</div>
+    <div class="card">
+    <img src="images/sanpham/danhmuc/dacnhantam.jpg">
+    <h3>Đắc Nhân Tâm</h3>
+    <p class="price">89.000đ</p>
+    <button>Xem chi tiết</button>
+    </div>
 
-<div class="card">
-<img src="images/nhagiakim.jpg">
-<h3>Nhà Giả Kim</h3>
-<p class="price">95.000đ</p>
-</div>
+    <div class="card">
+        <img src="images/sanpham/danhmuc/nhagiakim1.jpg">
+        <h3>Nhà Giả Kim</h3>
+        <p class="price">95.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
 
-<div class="card">
-<img src="images/sodo.jpg">
-<h3>Số Đỏ</h3>
-<p class="price">90.000đ</p>
-</div>
+    <div class="card">
+        <img src="images/sanpham/danhmuc/sodo.jpg">
+        <h3>Số Đỏ</h3>
+        <p class="price">90.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
 
-<div class="card">
-<img src="images/laohac.jpg">
-<h3>Lão Hạc</h3>
-<p class="price">70.000đ</p>
-</div>
+    <div class="card">
+        <img src="images/sanpham/danhmuc/chipheo.jpg">
+        <h3>Chí Phèo</h3>
+        <p class="price">88.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
 
-<div class="card">
-<img src="images/sach3.jpg">
-<h3>Đọc Vị Bất Kỳ Ai</h3>
-<p class="price">88.000đ</p>
-</div>
+    <div class="card">
+        <img src="images/sanpham/danhmuc/ngaymaitoicanthemchutdungkhi.jpg">
+        <h3>Ngày Mai Tôi Có Thể Thêm Chút Dùng Khi</h3>
+        <p class="price">140.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
 
-<div class="card">
-<img src="images/khoahoc1.jpg">
-<h3>Lược Sử Thời Gian</h3>
-<p class="price">140.000đ</p>
-</div>
+    <div class="card">
+        <img src="images/sanpham/danhmuc/kynangphiendich.jpg">
+        <h3>Kỹ Năng Phiên Dịch</h3>
+        <p class="price">120.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
 
-<div class="card">
-<img src="images/khoahoc2.jpg">
-<h3>Vũ Trụ Trong Vỏ Hạt Dẻ</h3>
-<p class="price">135.000đ</p>
-</div>
+    <div class="card">
+        <img src="images/sanpham/danhmuc/bacthayquanlythoigian.jpg">
+        <h3>Bậc Thầy Quản Lý Thời Gian</h3>
+        <p class="price">140.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
 
-<div class="card">
-<img src="images/khoahoc3.jpg">
-<h3>Brief Answers To The Big Questions</h3>
-<p class="price">145.000đ</p>
-</div>
+    <div class="card">
+        <img src="images/sanpham/danhmuc/nguoiladanduong.jpg">
+        <h3>Người Lạ Dẫn Đường</h3>
+        <p class="price">160.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
 
-<div class="card">
-<img src="images/khoahoc4.jpg">
-<h3>Sapiens - Lược Sử Loài Người</h3>
-<p class="price">160.000đ</p>
-</div>
-
-<div class="card">
-<img src="images/khoahoc5.jpg">
-<h3>Homo Deus</h3>
-<p class="price">170.000đ</p>
-</div>
-
+    <div class="card">
+        <img src="images/sanpham/danhmuc/nhatkycuacha.jpg">
+        <h3>Nhật Ký Của Cha</h3>
+        <p class="price">130.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
+    <div class="card">
+        <img src="images/sanpham/danhmuc/teamwork.jpg" alt="Teamwork - Kỹ Năng Làm Việc Nhóm Chuyên Nghiệp">
+        <h3>Teamwork - Kỹ Năng Làm Việc Nhóm Chuyên Nghiệp</h3>
+        <p class="price">140.000đ</p>
+        <button>Xem chi tiết</button>
+    </div>
 </div>
 
 </section>
 
 
-
+<!-- PAGINATION -->
+        <div class="pagination">
+            <a href="#">«</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">»</a>
+        </div>
 </main>
 
 </div>

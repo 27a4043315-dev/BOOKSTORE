@@ -29,16 +29,18 @@ scroll-behavior:smooth;
 </header>
 
 
-<nav>
+<nav class="menu">
+    <div class="menu-links">
+        <a href="Trangchu.html">Trang chủ</a>
+        <a href="Theloai.html">Thể loại</a>
+        <a href="Giohang.html">Giỏ hàng</a>
+    </div>
 
-<a href="Trangchu.html">Trang chủ</a>
-
-<a href="Theloai.html">Thể loại</a>
-
-<a href="Giohang.html">Giỏ hàng</a>
-
+    <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm sách...">
+        <button>🔍</button>
+    </div>
 </nav>
-
 
 <div class="container">
 
@@ -52,7 +54,7 @@ scroll-behavior:smooth;
 <ul>
 
 <ul>
-    <li><a href="Theloai.html">Tất cả sản phẩm </a></li>
+    <li><a href="Theloai.html">Tất Cả Sản Phẩm </a></li>
     <li><a href="kynang.html">Sách Kỹ Năng</a></li>
     <li><a href="vanhoc.html">Sách Văn Học</a></li>
     <li><a href="kinhte.html">Sách Kinh Tế</a></li>
@@ -61,38 +63,62 @@ scroll-behavior:smooth;
 </ul>
 </ul>
 
-</aside>
+    </aside>
 
+    <!-- PRODUCT -->
+    <main class="products">
 
-<main class="products">
-<h2>Sách Văn Học</h2>
+        <h2>Sách Văn Học</h2>
 
-<div class="product-grid">
+        <div class="product-grid">
 
-<div class="card">
-<img src="images/laohac.jpg">
-<h3>Lão Hạc</h3>
-<p class="price">70.000đ</p>
-<button>Xem chi tiết</button>
-</div>
+            <div class="card">
+                <img src="images/sanpham/danhmuc/dacnhantam.jpg" alt="Đắc nhân tâm">
+                <h3>Đắc Nhân Tâm</h3>
+                <p class="price">89.000đ</p>
+                <button>Xem chi tiết</button>
+            </div>
 
-<div class="card">
-<img src="images/sodo.jpg">
-<h3>Số Đỏ</h3>
-<p class="price">90.000đ</p>
-<button>Xem chi tiết</button>
-</div>
+            <div class="card">
+                <img src="images/sanpham/danhmuc/nguoiladanduong.jpg" alt="Người Lạ Dẫn Đường">
+                <h3>Người Lạ Dẫn Đường</h3>
+                <p class="price">150.000đ</p>
+                <button>Xem chi tiết</button>
+            </div>
 
-<div class="card">
-<img src="images/truyenkieu.jpg">
-<h3>Truyện Kiều</h3>
-<p class="price">80.000đ</p>
-<button>Xem chi tiết</button>
-</div>
+            <div class="card">
+                <img src="images/sanpham/danhmuc/nghigiaulamgiau.jpg" alt="Nghĩ Giàu & Làm Giàu">
+                <h3>Nghĩ Giàu & Làm Giàu</h3>
+                <p class="price">110.000đ</p>
+                <button>Xem chi tiết</button>
+            </div>
 
-</div>
-</main>
+            <div class="card">
+                <img src="images/sanpham/danhmuc/kynangphiendich.jpg" alt="Kỹ Năng Phiên Dịch">
+                <h3>Kỹ Năng Phiên Dịch</h3>
+                <p class="price">120.000đ</p>
+                <button>Xem chi tiết</button>
+            </div>
 
-</div>
+            <div class="card">
+                <img src="images/sanpham/danhmuc/bacthayquanlythoigian.jpg" alt="Bậc Thầy Quản Lý Thời Gian">
+                <h3>Bậc Thầy Quản Lý Thời Gian</h3>
+                <p class="price">140.000đ</p>
+                <button>Xem chi tiết</button>
+            </div>
+
+        
+        </div>
+        <!-- PAGINATION -->
+        <div class="pagination">
+            <a href="#">«</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">»</a>
+        </div>    
+    </main>
+</div>   
+<footer><p>© 2026 Blue The Moon</p></footer>
 </body>
 </html>
