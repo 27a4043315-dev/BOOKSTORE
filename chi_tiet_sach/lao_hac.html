@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="UTF-8">
+<title>Lão Hạc</title>
+
+<link rel="stylesheet" href="../css/stylechung.css">
+<link rel="stylesheet" href="../css/chitietsach.css">
+
+<script>
+
+function tang(){
+    let input = document.getElementById("soluong");
+    let value = parseInt(input.value);
+    input.value = value + 1;
+}
+
+function giam(){
+    let input = document.getElementById("soluong");
+    let value = parseInt(input.value);
+
+    if(value > 1){
+        input.value = value - 1;
+    }
+}
+
+</script>
+</head>
+
+<body>
+
+<header>
+
+<img src="../images/banner/logo.png" class="logo">
+
+<h1>BLUE THE MOON</h1>
+<p>Cùng chúng mình khám phá thế giới qua những cuốn sách ✨</p>
+
+</header>
+
+<nav>
+
+<a href="../Trangchu.html">Trang chủ</a>
+<a href="../Theloai.html">Thể loại</a>
+<a href="../Giohang.html">Giỏ hàng</a>
+
+</nav>
+
+
+<div class="chitiet-container">
+
+<div class="book-detail">
+
+<div class="book-image">
+<img src="..////images/sanpham/lao_hac.jpg">
+</div>
+
+<div class="book-info">
+
+<h2>Lão Hạc</h2>
+
+<p class="price-detail">70.000đ</p>
+
+<p class="author">
+Tác giả: Nam Cao
+</p>
+
+<div class="quantity">
+<button onclick="giam()">-</button>
+<input type="text" id="soluong" value="1">
+<button onclick="tang()">+</button>
+</div>
+
+<div class="actions">
+<button class="btn-cart">Cho vào giỏ hàng</button>
+<button class="btn-buy"><a href="../Giohang.html">Mua ngay</a></button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="description">
+
+<h3>Mô tả chi tiết</h3>
+
+<p>
+Lão Hạc là một truyện ngắn nổi tiếng của nhà văn Nam Cao, phản ánh chân thực 
+cuộc sống nghèo khổ của người nông dân Việt Nam trước Cách mạng tháng Tám. 
+Nhân vật Lão Hạc là một người cha già nghèo khổ nhưng giàu lòng tự trọng, 
+luôn yêu thương con trai và sống lương thiện dù hoàn cảnh vô cùng khó khăn.
+
+Tác phẩm thể hiện sâu sắc giá trị nhân đạo, đồng thời phê phán xã hội bất công 
+đã đẩy con người vào những bi kịch đau lòng.
+</p>
+
+</div>
+
+
+<div class="review">
+
+<h3>Đánh giá sản phẩm</h3>
+
+<input type="text" placeholder="Nhập tên">
+
+<input type="email" placeholder="Nhập email">
+
+<textarea rows="5" placeholder="Chia sẻ cảm nhận của bạn"></textarea>
+
+<button>Gửi bình luận</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
