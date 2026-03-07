@@ -146,6 +146,7 @@
     cursor:pointer;
 }
 
+/* co giãn ảnh sách*/
 .book-image{
     width:35%;
     overflow:hidden;
