@@ -28,12 +28,13 @@
     </div>
 
     <div class="search-box">
-        <input type="text" placeholder="Tìm kiếm sách...">
+       <input type="text" id="searchInput" placeholder="Tìm sách...">
         <button>🔍</button>
     </div>
 </nav>
 
 <section class="banner">
+    
 
     <!-- radio ẩn -->
     <input type="radio" name="slide" id="s1" checked>
@@ -278,7 +279,12 @@
     </div>
 
 </section>
+<button id="backToTop">↑</button>
+<div id="overlay">
+    <img id="bigImg">
+</div>
 </body> 
+<input type="text" id="searchInput" placeholder="Tìm sách...">
 
 <footer>
 <div class="newsletter">
@@ -291,3 +297,60 @@
 </div>
  <p>2026 Blue The Moon Bookstore</p>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    /* ===== SLIDE ===== */
+    let index = 1;
+    setInterval(function(){
+        index++;
+        if(index > 2) index = 1;
+        $("#s" + index).prop("checked", true);
+    }, 3000);
+
+    /* ===== SCROLL EFFECT ===== */
+    $(window).on("scroll", function(){
+        $(".hidden").each(function(){
+            let top = $(this).offset().top;
+            let scroll = $(window).scrollTop() + $(window).height();
+
+            if(scroll > top){
+                $(this).addClass("show");
+            }
+        });
+
+        /* nút lên đầu */
+        if($(window).scrollTop() > 300){
+            $("#backToTop").fadeIn();
+        } else {
+            $("#backToTop").fadeOut();
+        }
+    });
+
+    /* ===== BACK TO TOP ===== */
+    $("#backToTop").click(function(){
+        $("html, body").animate({scrollTop: 0}, 600);
+    });
+
+    /* ===== SEARCH ===== */
+    $("#searchInput").on("keyup", function(){
+        let value = $(this).val().toLowerCase();
+
+        $(".sanpham").filter(function(){
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+    });
+
+    /* ===== LIGHTBOX ===== */
+    $(".sanpham img, .card img").click(function(){
+        $("#bigImg").attr("src", $(this).attr("src"));
+        $("#overlay").fadeIn();
+    });
+
+    $("#overlay").click(function(){
+        $(this).fadeOut();
+    });
+
+});
+</script>
